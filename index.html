@@ -1,1 +1,64 @@
-y
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DinoVideo AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🦖 DinoVideo AI</h1>
+    <p>Turn your imagination into videos.</p>
+  </header>
+
+  <main>
+    <section class="generator">
+      <h2>Create your video</h2>
+
+      <label for="prompt">Describe your video</label>
+      <textarea
+        id="prompt"
+        placeholder="A beautiful cinematic village at sunrise..."
+      ></textarea>
+
+      <div class="settings">
+        <div>
+          <label for="duration">Duration</label>
+          <select id="duration">
+            <option value="5">5 seconds</option>
+            <option value="10">10 seconds</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="ratio">Aspect ratio</label>
+          <select id="ratio">
+            <option value="16:9">16:9</option>
+            <option value="9:16">9:16</option>
+            <option value="1:1">1:1</option>
+          </select>
+        </div>
+      </div>
+
+      <button id="generate">Generate Video ✨</button>
+
+      <p id="status">Your creativity starts here.</p>
+
+      <div class="preview">
+        <h3>Video Preview</h3>
+        <video id="video" controls playsinline></video>
+        <p id="placeholder">Your generated video will appear here.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 DinoVideo AI</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
